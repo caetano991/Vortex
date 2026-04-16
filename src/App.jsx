@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import {Sidebar} from './componets/Sidebar';
 import {Header} from './componets/Header';
 import {gamesData} from "./data/games";
-import {GameCard} from './componets/Gamecard';
+import {GameCard} from './componets/GameCard';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import './App.css';
