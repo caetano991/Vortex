@@ -9,9 +9,19 @@ import './App.css';
 
 function App() {
     const [search, setSearch] = useState('');
+    const [favorites, setFavorites] = useState([]);
+    const [activeTab, setActiveTab] = useState("dash");
 
     const filteredGames = gamesData
+    .filter((game) => activeTab === "dash" || favorites.includes(game.id))
     .filter((game) => game.title.toLowerCase().includes(search.toLowerCase()));
+
+
+      const toggleFavorites = (id) => {
+
+        setFavorites((prev) => prev.includes(id) ? prev.filter((favId) => favId !== id) : [...prev, id])
+
+      }
 
 
       useEffect(() => {
@@ -45,6 +55,8 @@ function App() {
                   category={g.category}
                   banner={g.banner}
                   index={index}
+                  isFavorite={favorites.includes(g.id)}
+                  onFavorite={() => toggleFavorites(g.id)}
                 />
               ))
             ): (
