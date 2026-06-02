@@ -1,6 +1,6 @@
 .vortex-app{
   display: flex;
-  min-height: 100vh;    
+  min-height: 100vh;
 }
 
 .vortex-main{
@@ -15,7 +15,8 @@
 
 .section-title{
   margin-bottom: 25px;
-  border-left: 4px solid #7c3aed;
+  border-left: 4px solid red;
+  padding-left: 15px;
 }
 
 .vortex-grid{

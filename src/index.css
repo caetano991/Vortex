@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Inter', sans-serif;
 }
 
 body{
-  background-color:#7c3aed;
-  color:rgb(162, 159, 159);
+  background-color: #020617;
+  color: white;
+  /* overflow-y: hidden; */
 }
